@@ -5,9 +5,14 @@
     <IconsAlarm :color="'#93C4F9'" class="mx-2"/>
     {{ `${title} ==> ${id}` }}
   </div>
+  <p>Count ==> {{ store.count }}</p>
+
 </template>
 
 <script setup>
+import { useCounterStore } from "~/stores/counter";
+
+const store = useCounterStore();
 const props = defineProps({
   title: String,
   id: Number,

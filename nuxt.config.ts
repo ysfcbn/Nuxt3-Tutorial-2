@@ -2,7 +2,7 @@ import { NuxtConfig } from 'nuxt/schema';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss'],
   alias: {
     assets: '/<rootDir>/assets',
   },
